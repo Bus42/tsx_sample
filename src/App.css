@@ -1,0 +1,50 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 2em;
+  background-color: #f4f4f4;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2em;
+  width: 100%;
+  max-width: 1200px;
+  /* Adjust as needed */
+}
+
+/* Prompts column styling */
+.prompts-column {
+  grid-column: 1;
+}
+
+/* Placeholder container styling */
+.placeholder-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  grid-column: 2;
+}
+
+.placeholder {
+  background-color: #ccc;
+  border-radius: 8px;
+  padding: 2em;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
