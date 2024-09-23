@@ -24,7 +24,7 @@ export default class PromptContainer extends React.Component<IPromptContainerPro
     };
   }
 
-  promptStyle: React.CSSProperties = {
+  _promptStyle: React.CSSProperties = {
     background: '#0077aa',
     padding: '40px',
     borderRadius: '5px',
@@ -35,7 +35,7 @@ export default class PromptContainer extends React.Component<IPromptContainerPro
     cursor: 'grab',        // Show a grab cursor initially
   };
 
-  listStyle: React.CSSProperties = {
+  _listStyle: React.CSSProperties = {
     display: 'flex',
     flexDirection: 'column',
     gap: '1em',
@@ -43,7 +43,7 @@ export default class PromptContainer extends React.Component<IPromptContainerPro
     margin: 0,
   };
 
-    buttonStyle: React.CSSProperties = {
+    _buttonStyle: React.CSSProperties = {
         color: '#1a771a',
         background: '#fafafa',
         padding: '10px',
@@ -52,11 +52,18 @@ export default class PromptContainer extends React.Component<IPromptContainerPro
         cursor: 'pointer',
     };
 
-    deleteButtonStyle: React.CSSProperties = {
-        ...this.buttonStyle,
+    _deleteButtonStyle: React.CSSProperties = {
+        ...this._buttonStyle,
         color: '#771a1a'
     };
 
+    _getRenderItemStyle = (props: any, isDragged: boolean) => {
+              return {...this._promptStyle,
+              ...props.style,
+              opacity: isDragged ? 0.8 : 1,
+              transition: isDragged ? 'none' : 'transform 0.2s ease', 
+              cursor: isDragged ? 'grabbing' : 'grab',
+            };}
   public render() {
     return (
       <List
@@ -67,20 +74,14 @@ export default class PromptContainer extends React.Component<IPromptContainerPro
           })
         }
         renderList={({ children, props }) => (
-          <ul {...props} style={this.listStyle}>
+          <ul {...props} style={this._listStyle}>
             {children}
           </ul>
         )}
         renderItem={({ value, props, isDragged }) => (
           <li
             {...props}
-            style={{
-              ...this.promptStyle,
-              ...props.style,
-              opacity: isDragged ? 0.8 : 1,
-              transition: isDragged ? 'none' : 'transform 0.2s ease', 
-              cursor: isDragged ? 'grabbing' : 'grab',
-            }}
+            style={this._getRenderItemStyle(props, isDragged)}
           >
             <p>{value.text}</p>
             <div style={{display:'flex', flexFlow:'row nowrap', justifyContent: 'flex-end', gap: '1em'}}>
