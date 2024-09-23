@@ -1,0 +1,41 @@
+/* Styles for the PromptContainer component */
+
+.prompt-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+    margin: 0;
+}
+
+.prompt-item {
+    background: #0077aa;
+    padding: 40px;
+    border-radius: 5px;
+    color: #fafafa;
+    text-align: center;
+    margin: 1em;
+    list-style-type: none;
+    /* Remove list-style if using ul/li */
+    cursor: grab;
+    transition: transform 0.2s ease;
+}
+
+.prompt-item.grabbing {
+    opacity: 0.8;
+    cursor: grabbing;
+    transition: none;
+}
+
+.prompt-button {
+    color: #1a771a;
+    background: #fafafa;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.prompt-button.delete {
+    color: #771a1a;
+}
