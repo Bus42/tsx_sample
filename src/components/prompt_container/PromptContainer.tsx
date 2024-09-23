@@ -84,8 +84,6 @@ export default class PromptContainer extends React.Component<IPromptContainerPro
             style={this._getRenderItemStyle(props, isDragged)}
           >
             <p>{value.text}</p>
-            <div style={{display:'flex', flexFlow:'row nowrap', justifyContent: 'flex-end', gap: '1em'}}>
-            </div>
           </li>
         )}
       />
