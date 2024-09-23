@@ -2,7 +2,7 @@ import * as React from 'react';
 import {List, arrayMove} from 'react-movable';
 
 interface Prompt {
-    id: number;
+    id: string;
     text: string;
     last_used: string;
     prompt_start: string;
@@ -43,6 +43,20 @@ export default class PromptContainer extends React.Component<IPromptContainerPro
     margin: 0,
   };
 
+    buttonStyle: React.CSSProperties = {
+        color: '#1a771a',
+        background: '#fafafa',
+        padding: '10px',
+        borderRadius: '5px',
+        border: 'none',
+        cursor: 'pointer',
+    };
+
+    deleteButtonStyle: React.CSSProperties = {
+        ...this.buttonStyle,
+        color: '#771a1a'
+    };
+
   public render() {
     return (
       <List
@@ -62,13 +76,15 @@ export default class PromptContainer extends React.Component<IPromptContainerPro
             {...props}
             style={{
               ...this.promptStyle,
-              ...props.style, // Ensure provided styles (like transform) are applied
-              opacity: isDragged ? 0.8 : 1, // Adjust visibility while dragging
-              transition: isDragged ? 'none' : 'transform 0.2s ease', // Disable transition while dragging
-              cursor: isDragged ? 'grabbing' : 'grab', // Change to 'grabbing' when dragged
+              ...props.style,
+              opacity: isDragged ? 0.8 : 1,
+              transition: isDragged ? 'none' : 'transform 0.2s ease', 
+              cursor: isDragged ? 'grabbing' : 'grab',
             }}
           >
-            {value.text}
+            <p>{value.text}</p>
+            <div style={{display:'flex', flexFlow:'row nowrap', justifyContent: 'flex-end', gap: '1em'}}>
+            </div>
           </li>
         )}
       />

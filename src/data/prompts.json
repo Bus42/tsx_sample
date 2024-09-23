@@ -1,80 +1,54 @@
 [
     {
-        "id": 1,
-        "text": "foo",
-        "last_used": "2024-08-15",
-        "prompt_start": "2024-09-10"
+        "id": "c55f8a80-73e8-4b2f-a20b-c1e2879a25db",
+        "text": "A shadow moved in the moonlit alley."
     },
     {
-        "id": 2,
-        "text": "bar",
-        "last_used": "2024-08-20",
-        "prompt_start": "2024-09-12"
+        "id": "8d4c9fbb-f97d-41f9-bd9d-19b25be1d056",
+        "text": "The old map led to a buried secret."
     },
     {
-        "id": 3,
-        "text": "baz",
-        "last_used": "2024-07-30",
-        "prompt_start": "2024-08-15"
+        "id": "62cb1b0e-c7d5-44d0-8c95-06c35d1c8e62",
+        "text": "A storm was brewing on the horizon."
     },
     {
-        "id": 4,
-        "text": "qux",
-        "last_used": "2024-08-25",
-        "prompt_start": "2024-09-05"
+        "id": "67ac9d64-0d22-4d2d-8e58-ff024d3b1730",
+        "text": "He opened the door to an empty room."
     },
     {
-        "id": 5,
-        "text": "quux",
-        "last_used": "2024-09-05",
-        "prompt_start": "2024-09-18"
+        "id": "c1df8272-c67a-46fa-a437-515982d6356b",
+        "text": "She found a key hidden under the floor."
     },
     {
-        "id": 6,
-        "text": "corge",
-        "last_used": "2024-08-10",
-        "prompt_start": "2024-08-28"
+        "id": "5a1a44d2-22f7-4265-92b6-576bce6ff7d0",
+        "text": "The clock struck midnight; something felt wrong."
     },
     {
-        "id": 7,
-        "text": "grault",
-        "last_used": "2024-07-25",
-        "prompt_start": "2024-08-05"
+        "id": "34f745ef-b81c-4c8a-832b-6c86e93ae8e7",
+        "text": "The forest was silent, too silent."
     },
     {
-        "id": 8,
-        "text": "garply",
-        "last_used": "2024-09-01",
-        "prompt_start": "2024-09-20"
+        "id": "dc5a05d3-d28c-4c4f-8310-41a26d0f83d9",
+        "text": "A letter arrived with no return address."
     },
     {
-        "id": 9,
-        "text": "waldo",
-        "last_used": "2024-08-18",
-        "prompt_start": "2024-09-15"
+        "id": "a987c7c7-40e1-41e4-81be-836b42301e67",
+        "text": "She stared at the stars, waiting for a sign."
     },
     {
-        "id": 0,
-        "text": "fred",
-        "last_used": "2024-09-03",
-        "prompt_start": "2024-09-22"
+        "id": "f01f8347-2e83-46c5-8c60-8a6ff01e81cf",
+        "text": "The rain hid the stranger’s tears."
     },
     {
-        "id": 11,
-        "text": "plugh",
-        "last_used": "2024-07-31",
-        "prompt_start": "2024-08-10"
+        "id": "b118738d-73f3-4f70-944b-df50ebfa3ab3",
+        "text": "Footsteps echoed in the abandoned hallway."
     },
     {
-        "id": 12,
-        "text": "xyzzy",
-        "last_used": "2024-08-05",
-        "prompt_start": "2024-08-20"
+        "id": "f3f03f15-2a08-4e2d-8289-5915a0806064",
+        "text": "The wind whispered her name through the trees."
     },
     {
-        "id": 13,
-        "text": "thud",
-        "last_used": "2024-09-10",
-        "prompt_start": "2024-09-25"
+        "id": "a76cc7e5-d722-48b1-84c4-8d649089c17e",
+        "text": "A mysterious figure stood at the crossroads."
     }
 ]
