@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { List } from 'react-movable';
 import './prompt_container.css';
 import { PromptContainerProps } from './interfaces';
-import { handleOnChange, getRenderItemStyle } from './logic'; // Importing logic from logic.ts
+import { handleOnChange, getRenderItemStyle } from './logic.ts'; // Importing logic from logic.ts
 
 const PromptContainer: React.FC<PromptContainerProps> = ({ data }) => {
     const [prompts, setPrompts] = useState(data);
